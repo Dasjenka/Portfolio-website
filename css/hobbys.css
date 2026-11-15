@@ -1,0 +1,170 @@
+
+/* BODY */
+
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    background-image: url("../foto/back-ground_black.png");
+    background-size: auto;
+    background-position: center top;
+    background-repeat: repeat;
+}
+
+/* HEADER */
+
+header {
+    padding: 25px 25px 0;
+}
+
+/* NAVBAR */
+
+nav img {
+    width: 45px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.home {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #312320;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 10px;
+    box-sizing: border-box;
+    transform: translateX(5px);
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #928E61;
+    opacity: 87%;
+    padding: 0;
+    margin: 0;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    width: calc(100% - 10px);
+}
+
+nav a {
+    color: #312320;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #515F23;
+    color: white;
+}
+
+nav a:not(.home):hover {
+    border-radius: 30px;
+}
+
+/* LOGO HOVER */
+
+.logo-wit {
+    display: none;
+}
+
+.home:hover .logo-zwart {
+    display: none;
+}
+
+.home:hover .logo-wit {
+    display: block;
+}
+
+/* MAIN */
+
+main {
+    flex: 1;
+    padding: 0 25px 25px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #D3CBB9;
+    font-size: 45px;
+}
+
+/* HOBBY CONTAINER */
+
+.hobby-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-top: 100px;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+/* VIDEO */
+
+.hobby-video video {
+    width: 300px;
+    border-radius: 15px;
+    border: 1.5px solid #312320;
+}
+
+/* HOBBY BLOKKEN */
+
+.hobby-blok {
+    background-color: #D3CBB9;
+    border-radius: 25px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    justify-content: space-evenly;
+    gap: 15px;
+    width: 700px;
+    border: 1.5px solid #312320;
+}
+
+/* HOBBY TEKST */
+
+.hobby-tekst {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    border: 1.5px solid #312320;
+}
+
+/* PIXEL ART */
+
+#pixel-art {
+    align-self: flex-end;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    color: #D3CBB9;
+
+    background: linear-gradient(
+        to bottom,
+        black 0%,
+        black 100%
+    );
+}
+
+.footer-links p {
+    margin: 0;
+}
